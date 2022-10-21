@@ -1,0 +1,11 @@
+[licenses]
+allow = [
+    "MIT",
+    "BSD-3-Clause",
+    "Apache-2.0",
+    "MPL-2.0",
+    "ISC",
+    "Unicode-DFS-2016",
+]
+default = "deny"
+unlicensed = "deny"
