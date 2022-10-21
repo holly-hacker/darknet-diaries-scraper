@@ -69,7 +69,7 @@ async fn find_latest_episode() -> anyhow::Result<u32> {
     let response = reqwest::get("https://darknetdiaries.com/episode/").await?;
     let source = response.text().await?;
 
-    let x = Regex::new("/episode/(\\d+)/")?;
+    let x = Regex::new("/episode/([0-9]+)/")?;
     let stuff = x
         .captures_iter(&source)
         .flat_map(|x| x.get(1))
